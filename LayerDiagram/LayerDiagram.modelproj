@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1b43fd63-a260-48ba-a16b-edd33da2eb57}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>LayerDiagram</Name>
+    <RootNamespace>LayerDiagram</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Validate Include="DependencyValidation1.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="DependencyValidation1.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation1.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="DependencyValidation1.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation1.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataTrack.Data\DataTrack.DAL.csproj">
+      <Name>DataTrack.DAL</Name>
+      <Project>{c61155f7-c33c-4ba7-947e-737803347319}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTrack.Interrogator\DataTrack.Serice.Interrogator.csproj">
+      <Name>DataTrack.Serice.Interrogator</Name>
+      <Project>{668ceed8-0495-42b1-9693-21d27e52d65f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTrack.Investigator\DataTrack.Investigator.csproj">
+      <Name>DataTrack.Investigator</Name>
+      <Project>{1adc19ce-1462-4689-b835-bfef82dc1801}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTrack.Monitor\DataTrack.Monitor.csproj">
+      <Name>DataTrack.Monitor</Name>
+      <Project>{e8571b64-039f-4158-8551-56b1817c1283}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTrack.Service.Lineage\DataTrack.Service.Lineage.csproj">
+      <Name>DataTrack.Service.Lineage</Name>
+      <Project>{96caa693-9cbe-4ebf-a3a7-1edcb1b903d0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Dictionary\DataTrack.Service.Dictionary.csproj">
+      <Name>DataTrack.Service.Dictionary</Name>
+      <Project>{dc103860-ad59-4401-9fb4-768694335831}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Flow\DataTrack.Service.Flow.csproj">
+      <Name>DataTrack.Service.Flow</Name>
+      <Project>{a05b3015-a1b2-485c-b2c3-651121ffa04e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Map\DataTrack.Service.Map.csproj">
+      <Name>DataTrack.Service.Map</Name>
+      <Project>{cb13d4b6-a5af-441a-a9cc-cc36f5d911aa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Process\DataTrack.Service.Process.csproj">
+      <Name>DataTrack.Service.Process</Name>
+      <Project>{ae32df21-e98e-46e6-8be7-31ec14f44630}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="07b86d55-e09b-4772-bb89-b6f1d288cf1b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="2300f91b-53ac-44c0-b8b7-ca705c97752a" name="DataTrack.DAL">
+      <references>
+        <reference Id="2375328b-196e-46e5-a841-ff1bf647157c" name="DataTrack.DAL">
+          <ArtifactNode Label="DataTrack.DAL" Category="CodeSchema_Project" Id="(Assembly=../DataTrack.Data/DataTrack.DAL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.DAL)" Label="DataTrack.DAL.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="4289b64a-26b3-4b17-af32-1885c3d5df00" name="DataTrack.Serice.Interrogator">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="62b5c6f0-3f79-42e3-8274-b65a083bdb21" direction="Forward">
+          <layerMoniker Id="2300f91b-53ac-44c0-b8b7-ca705c97752a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="9035360e-d3b2-4b21-8dee-53da57649eba" name="DataTrack.Serice.Interrogator">
+          <ArtifactNode Label="DataTrack.Serice.Interrogator" Category="CodeSchema_Project" Id="(Assembly=../DataTrack.Interrogator/DataTrack.Serice.Interrogator.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Serice.Interrogator)" Label="DataTrack.Serice.Interrogator.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="de080687-b5e0-4e8b-81c6-1634bc55afde" name="DataTrack.Service.Dictionary">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="535390c4-e79a-4d57-be1f-ec522b31230f" direction="Forward">
+          <layerMoniker Id="2300f91b-53ac-44c0-b8b7-ca705c97752a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="eefaabd4-e1b5-4fc5-a4b0-9f90e4f63321" name="DataTrack.Service.Dictionary">
+          <ArtifactNode Label="DataTrack.Service.Dictionary" Category="CodeSchema_Project" Id="(Assembly=../Dictionary/DataTrack.Service.Dictionary.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Service.Dictionary)" Label="DataTrack.Service.Dictionary.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="f2b35b28-5aac-4be0-9c18-070c33bfcd3a" name="DataTrack.Service.Process">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="b6549d22-3c04-42d9-844b-685148e37f24" direction="Forward">
+          <layerMoniker Id="2300f91b-53ac-44c0-b8b7-ca705c97752a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="4cc1d679-4a48-4193-87ad-fa8629115d5d" name="DataTrack.Service.Process">
+          <ArtifactNode Label="DataTrack.Service.Process" Category="CodeSchema_Project" Id="(Assembly=../Process/DataTrack.Service.Process.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Service.Process)" Label="DataTrack.Service.Process.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="f6a5e0cd-f5c7-40d4-a57f-932077982be7" name="DataTrack.Service.Flow">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="5a13f6c3-82c5-42cd-a89d-2afa4b167fb1" direction="Forward">
+          <layerMoniker Id="2300f91b-53ac-44c0-b8b7-ca705c97752a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="9d80a571-1a87-4631-9354-fddeacd29558" name="DataTrack.Service.Flow">
+          <ArtifactNode Label="DataTrack.Service.Flow" Category="CodeSchema_Project" Id="(Assembly=../Flow/DataTrack.Service.Flow.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Service.Flow)" Label="DataTrack.Service.Flow.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="625e8923-0da1-4db9-9de8-ce9529cfeba4" name="DataTrack.Service.Lineage">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="249b40c0-10c8-4e89-9922-bedf4caf2e3e" direction="Forward">
+          <layerMoniker Id="2300f91b-53ac-44c0-b8b7-ca705c97752a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="a990c767-a217-4541-8954-b81bae3dcf76" name="DataTrack.Service.Lineage">
+          <ArtifactNode Label="DataTrack.Service.Lineage" Category="CodeSchema_Project" Id="(Assembly=../DataTrack.Service.Lineage/DataTrack.Service.Lineage.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Service.Lineage)" Label="DataTrack.Service.Lineage.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="05f22180-e120-4f8f-966c-66a90e1c0492" name="DataTrack.Service.Map">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="9910ebfc-d828-4557-99af-239d8a8a28dd" direction="Forward">
+          <layerMoniker Id="2300f91b-53ac-44c0-b8b7-ca705c97752a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="d88bf014-4c73-41c9-8ecf-53140d7089b0" name="DataTrack.Service.Map">
+          <ArtifactNode Label="DataTrack.Service.Map" Category="CodeSchema_Project" Id="(Assembly=../Map/DataTrack.Service.Map.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Service.Map)" Label="DataTrack.Service.Map.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="4b281f34-bdaf-407c-8647-7527ae68c25e" name="DataTrack.Monitor">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a175996e-74ea-43e0-a78a-66570282f86b" direction="Forward">
+          <layerMoniker Id="f2b35b28-5aac-4be0-9c18-070c33bfcd3a" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="1a6d752e-1285-43c1-83d6-a09f2ed34c0c" direction="Forward">
+          <layerMoniker Id="f6a5e0cd-f5c7-40d4-a57f-932077982be7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="42c29990-54f8-4ea2-8eaa-83ab7bed1646" direction="Forward">
+          <layerMoniker Id="625e8923-0da1-4db9-9de8-ce9529cfeba4" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="724290c8-7636-45d7-aeec-dcb98da5b39a" name="DataTrack.Monitor">
+          <ArtifactNode Label="DataTrack.Monitor" Category="CodeSchema_Project" Id="(Assembly=../DataTrack.Monitor/DataTrack.Monitor.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Monitor)" Label="DataTrack.Monitor.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="56106236-699c-4c30-bae7-6835f48958eb" name="DataTrack.Investigator">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1875971b-b92e-4238-aa42-f96f1a8b372c" direction="Forward">
+          <layerMoniker Id="4289b64a-26b3-4b17-af32-1885c3d5df00" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="3aa822df-8ca4-4574-beab-23deb373decb" direction="Forward">
+          <layerMoniker Id="05f22180-e120-4f8f-966c-66a90e1c0492" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="0587b8d9-de58-4c56-8bfd-d83ccf69a05e" direction="Forward">
+          <layerMoniker Id="de080687-b5e0-4e8b-81c6-1634bc55afde" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="80c53bb6-9fce-41b3-8dcd-ad090fb07258" name="DataTrack.Investigator">
+          <ArtifactNode Label="DataTrack.Investigator" Category="CodeSchema_Project" Id="(Assembly=../DataTrack.Investigator/DataTrack.Investigator.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataTrack.Investigator)" Label="DataTrack.Investigator.exe" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
