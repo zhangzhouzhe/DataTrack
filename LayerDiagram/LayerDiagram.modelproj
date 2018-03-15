@@ -38,10 +38,6 @@
       <Name>DataTrack.DAL</Name>
       <Project>{c61155f7-c33c-4ba7-947e-737803347319}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\DataTrack.Interrogator\DataTrack.Serice.Interrogator.csproj">
-      <Name>DataTrack.Serice.Interrogator</Name>
-      <Project>{668ceed8-0495-42b1-9693-21d27e52d65f}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\DataTrack.Investigator\DataTrack.Investigator.csproj">
       <Name>DataTrack.Investigator</Name>
       <Project>{1adc19ce-1462-4689-b835-bfef82dc1801}</Project>
