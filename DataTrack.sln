@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTrack.Service.Flow", "F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTrack.Service.Lineage", "DataTrack.Service.Lineage\DataTrack.Service.Lineage.csproj", "{96CAA693-9CBE-4EBF-A3A7-1EDCB1B903D0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTrack.DAL", "DataTrack.Data\DataTrack.DAL.csproj", "{C61155F7-C33C-4BA7-947E-737803347319}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTrack.Investigator", "DataTrack.Investigator\DataTrack.Investigator.csproj", "{1ADC19CE-1462-4689-B835-BFEF82DC1801}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTrack.Monitor", "DataTrack.Monitor\DataTrack.Monitor.csproj", "{E8571B64-039F-4158-8551-56B1817C1283}"
@@ -28,6 +26,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTrack.Logging", "DataTrack.Logging\DataTrack.Logging.csproj", "{7EC9E807-CBBA-4DEF-A34A-D958D5DD379A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTrack.Service.Interrogator", "DataTrack.Service.Interrogator\DataTrack.Service.Interrogator.csproj", "{8A273F67-CBC6-4F46-BE60-021A5AA990A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTrack.DAL", "DataTrack.DAL\DataTrack.DAL.csproj", "{07DDD796-7B89-4C48-93B9-8A4FB00D6F70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +55,6 @@ Global
 		{96CAA693-9CBE-4EBF-A3A7-1EDCB1B903D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96CAA693-9CBE-4EBF-A3A7-1EDCB1B903D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96CAA693-9CBE-4EBF-A3A7-1EDCB1B903D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C61155F7-C33C-4BA7-947E-737803347319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C61155F7-C33C-4BA7-947E-737803347319}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C61155F7-C33C-4BA7-947E-737803347319}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C61155F7-C33C-4BA7-947E-737803347319}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1ADC19CE-1462-4689-B835-BFEF82DC1801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1ADC19CE-1462-4689-B835-BFEF82DC1801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ADC19CE-1462-4689-B835-BFEF82DC1801}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +83,10 @@ Global
 		{8A273F67-CBC6-4F46-BE60-021A5AA990A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A273F67-CBC6-4F46-BE60-021A5AA990A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A273F67-CBC6-4F46-BE60-021A5AA990A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07DDD796-7B89-4C48-93B9-8A4FB00D6F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DDD796-7B89-4C48-93B9-8A4FB00D6F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DDD796-7B89-4C48-93B9-8A4FB00D6F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DDD796-7B89-4C48-93B9-8A4FB00D6F70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

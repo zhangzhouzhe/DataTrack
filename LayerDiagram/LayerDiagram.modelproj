@@ -34,10 +34,6 @@
     </Validate>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataTrack.Data\DataTrack.DAL.csproj">
-      <Name>DataTrack.DAL</Name>
-      <Project>{c61155f7-c33c-4ba7-947e-737803347319}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\DataTrack.Investigator\DataTrack.Investigator.csproj">
       <Name>DataTrack.Investigator</Name>
       <Project>{1adc19ce-1462-4689-b835-bfef82dc1801}</Project>
