@@ -1,5 +1,5 @@
-﻿namespace DataTrack.Service.Interrogator
-{
+﻿namespace DataTrack.Service
+{ 
     partial class DTnterrogationInstaller
     {
         /// <summary>

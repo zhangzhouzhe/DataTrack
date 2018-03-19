@@ -6,7 +6,7 @@ using System.Configuration.Install;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DataTrack.Service.Interrogator
+namespace DataTrack.Service
 {
     [RunInstaller(true)]
     public partial class DTnterrogationInstaller : System.Configuration.Install.Installer

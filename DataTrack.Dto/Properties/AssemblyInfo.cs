@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DataTrack.Service.Interrogator")]
+[assembly: AssemblyTitle("DataTrack.Dto")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DataTrack.Service.Interrogator")]
+[assembly: AssemblyProduct("DataTrack.Dto")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("66f9561d-6bf3-4a18-91c1-bdc2897d43a2")]
+[assembly: Guid("aa77fb14-94a8-400e-ba28-e23579da896a")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -61,6 +61,20 @@
     <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
     <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataTrack.DAL\DataTrack.DAL.csproj">
+      <Project>{07ddd796-7b89-4c48-93b9-8a4fb00d6f70}</Project>
+      <Name>DataTrack.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTrack.Dto\DataTrack.Dto.csproj">
+      <Project>{aa77fb14-94a8-400e-ba28-e23579da896a}</Project>
+      <Name>DataTrack.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTrack.Service\DataTrack.Service.csproj">
+      <Project>{8a273f67-cbc6-4f46-be60-021a5aa990a0}</Project>
+      <Name>DataTrack.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

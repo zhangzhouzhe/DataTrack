@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{07DDD796-7B89-4C48-93B9-8A4FB00D6F70}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataTrack.DAL</RootNamespace>
-    <AssemblyName>DataTrack.DAL</AssemblyName>
+    <ProjectGuid>{8A273F67-CBC6-4F46-BE60-021A5AA990A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataTrack.Service</RootNamespace>
+    <AssemblyName>DataTrack.Service</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,30 +32,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contexts\InterrogratorContext.cs" />
-    <Compile Include="Interrogator\Source.cs" />
-    <Compile Include="Migrations\201803152210465_initial.cs" />
-    <Compile Include="Migrations\201803152210465_initial.Designer.cs">
-      <DependentUpon>201803152210465_initial.cs</DependentUpon>
+    <Compile Include="DTnterrogationInstaller.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="DTnterrogationInstaller.Designer.cs">
+      <DependentUpon>DTnterrogationInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTInterrogator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DTInterrogator.Designer.cs">
+      <DependentUpon>DTInterrogator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,8 +65,6 @@
       <Link>DependencyValidation1.layerdiagram</Link>
       <Visible>False</Visible>
     </AdditionalFiles>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -71,14 +73,17 @@
     <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803152210465_initial.resx">
-      <DependentUpon>201803152210465_initial.cs</DependentUpon>
+    <EmbeddedResource Include="DTnterrogationInstaller.resx">
+      <DependentUpon>DTnterrogationInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTInterrogator.resx">
+      <DependentUpon>DTInterrogator.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataTrack.Dto\DataTrack.Dto.csproj">
-      <Project>{aa77fb14-94a8-400e-ba28-e23579da896a}</Project>
-      <Name>DataTrack.Dto</Name>
+    <ProjectReference Include="..\DataTrack.Service.Interrogator\DataTrack.Service.Interrogator.csproj">
+      <Project>{66f9561d-6bf3-4a18-91c1-bdc2897d43a2}</Project>
+      <Name>DataTrack.Service.Interrogator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
